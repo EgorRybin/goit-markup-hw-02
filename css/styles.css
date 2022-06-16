@@ -1,0 +1,6 @@
+.team {
+color: #000;
+}
+.list.team {
+ list-style: none;   
+}
