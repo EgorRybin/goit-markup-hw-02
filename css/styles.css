@@ -7,20 +7,23 @@
 
 /* цвет основного фона #E5E5E5; */
 /* цвет вторичного фона  #2F303A; */
+/* цвет фона кнопок #F5F4FA; */
 
 /* цвет шапки лого #000000; */
 /* цвет лого футер #FFFFFF; */
 
 :root {
-    --title-text-color: #212121;
-    --primary-text-color: #757575;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
     --accent-color:#2196F3;
+    --primary-bg-color: #E5E5E5;
+    --wite-color: #FFFFFF;
 }
 
 
 body {
-   background: #E5E5E5;
-   color: var(--title-text-color)
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
 }
 /* утилиты */
 
@@ -31,25 +34,29 @@ body {
 /* логотип */
 
 .logo {
- color: var(--accent-color)
+ color: var(--accent-color);
 }
 
 /* логотип шапка */
 
 .logo-header {
-    color: #FFFFFF;
+    color: var(--primary-text-color);
 }
 
 /* логотип футер */
 
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--wite-color);
 }
 
 /* навигация */
 
 .site-nav .link {
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
+}
+
+.site-nav .link-current {
+    color: var(--accent-color);
 }
 
 .site-nav .link:hover,
@@ -60,7 +67,7 @@ body {
 /* контакты */
 
 .contakts-header {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
 /* контакты шапка */
 
@@ -75,6 +82,23 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.contakts-footer:hover,
+.contakts-footer:focus {
+    color: var(--accent-color);
+}
+
+/* адрес */
+
+.address {
+    color: var(--wite-color);
+}
+
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
+}
+
+
 /* герой */
 
 .hero {
@@ -82,16 +106,40 @@ body {
 }
 
 .hero-title {
-    color: #FFFFFF
+    color: var(--wite-color);
 }
 
 /* секции */
 
 .section-title {
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 }
 /* качества */
 
 .quality-list {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+}
+
+/* каталог */
+
+.catalog-text {
+    color: var(--secondary-text-color);
+}
+
+/* кнопки */
+
+.button {
+    color: #212121;
+    background-color: #E5E5E5;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--wite-color);
+    background: var(--accent-color);
+}
+
+.button.primary {
+    color: var(--wite-color);
+    background-color: var(--accent-color);
 }
