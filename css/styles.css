@@ -17,14 +17,24 @@
     --secondary-text-color: #757575;
     --accent-color:#2196F3;
     --primary-bg-color: #E5E5E5;
+    --secondary-bg-color: #2F303A;
     --wite-color: #FFFFFF;
+    --button-bg-color: #F5F4FA
 }
 
 
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
+
+    font-family: Roboto, Comfortaa, Lato, sans-serif;
+    letter-spacing: 0.03em;
 }
+
+footer {
+    background-color: var(--secondary-bg-color);
+}
+
 /* утилиты */
 
 .list {
@@ -34,7 +44,12 @@ body {
 /* логотип */
 
 .logo {
- color: var(--accent-color);
+    color: var(--accent-color);
+    font-family: Raleway; sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 /* логотип шапка */
@@ -53,10 +68,20 @@ body {
 
 .site-nav .link {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .site-nav .link-current {
     color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -68,6 +93,11 @@ body {
 
 .contakts-header {
     color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 /* контакты шапка */
 
@@ -80,6 +110,10 @@ body {
 
 .contakts-footer {
     color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
 }
 
 .contakts-footer:hover,
@@ -91,6 +125,10 @@ body {
 
 .address {
     color: var(--wite-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
 }
 
 .address:hover,
@@ -102,22 +140,43 @@ body {
 /* герой */
 
 .hero {
-
+    background-color: var(--secondary-bg-color);
 }
 
 .hero-title {
     color: var(--wite-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* секции */
 
 .section-title {
-    color: var(--primary-text-color);
-}
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}    
+
 /* качества */
 
 .quality-list {
     color: var(--secondary-text-color);
+}
+
+.section-list {
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* каталог */
@@ -126,20 +185,55 @@ body {
     color: var(--secondary-text-color);
 }
 
+.catalog-title {
+    color: var(--primary-text-color);
+}
+
+.catalog-link {
+    text-decoration: none;
+}
+
+
 /* кнопки */
 
 .button {
-    color: #212121;
-    background-color: #E5E5E5;
+    font-family: inherit;
+    cursor: pointer;
 }
 
-.button:hover,
+.button.secondary {
+    background-color: #E5E5E5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
 .button:focus {
     color: var(--wite-color);
     background: var(--accent-color);
 }
 
 .button.primary {
+    
     color: var(--wite-color);
     background-color: var(--accent-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+        
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
+
+.button.primary:hover,
+.button.primary:focus {
+    color: var(--primary-text-color);
+    background-color: var(--button-bg-color);
+}
+
