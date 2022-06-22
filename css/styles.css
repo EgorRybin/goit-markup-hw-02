@@ -39,13 +39,14 @@ footer {
 
 .list {
     list-style: none;
+    font-style: normal;
 }
 
 /* логотип */
 
 .logo {
     color: var(--accent-color);
-    font-family: Raleway; sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -162,12 +163,6 @@ footer {
     text-align: center;
 }    
 
-/* качества */
-
-.quality-list {
-    color: var(--secondary-text-color);
-}
-
 .section-list {
     color: var(--primary-text-color);
     font-family: 'Roboto';
@@ -179,14 +174,44 @@ footer {
     text-decoration: none;
 }
 
+/* качества */
+
+.quality-list {
+    color: var(--secondary-text-color);
+}
+
+/* наша команда */
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
 /* каталог */
 
 .catalog-text {
     color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 .catalog-title {
     color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;    
+    letter-spacing: 0.06em;
 }
 
 .catalog-link {
